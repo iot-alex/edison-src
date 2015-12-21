@@ -1,4 +1,2 @@
 bitbake_download_dir
 bitbake_sstate_dir
-meta-arduino
-out
