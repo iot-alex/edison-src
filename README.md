@@ -5,11 +5,8 @@
 - done : 
 ```
 make setup
-./runme
 ```
 - todo :
 ```
-cd out/linux64
-source poky/oe-init-build-env
-bitbake edison-image
+./runme
 ```

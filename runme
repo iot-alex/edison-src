@@ -1,6 +1,9 @@
-
-PWD=`pwd`
+DATE=$(date)
+PWD=$(pwd)
 
 mkdir -p bitbake_download_dir
 mkdir -p bitbake_sstate_dir
 ./meta-intel-edison/setup.sh --dl_dir=$PWD/bitbake_download_dir --sstate_dir=$PWD/bitbake_sstate_dir
+cd out/linux64
+source poky/oe-init-build-env
+make image
